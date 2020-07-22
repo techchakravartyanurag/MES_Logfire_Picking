@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Pick Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Enter the Cart#</ion-label>
+    <ion-input></ion-input>
+
+    <ion-button size="small" color="dark"
+      ><ion-icon name="qr-code-outline"></ion-icon> Scan</ion-button
+    >
+  </ion-item>
+</ion-content>
+<ion-card-content>
+  <ion-button
+    routerLink="./cartPosition"
+    slot="start"
+    offset="6"
+    size="small"
+    color="tertiary"
+  >
+    Next <ion-icon name="arrow-forward-outline"></ion-icon
+  ></ion-button>
+</ion-card-content>

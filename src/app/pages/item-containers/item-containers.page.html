@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Item Containers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="fixed">Item: </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Container: </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Serial Numbers: </ion-label>
+      <ion-input></ion-input>
+
+      <ion-button size="small" color="dark"
+        ><ion-icon name="close-outline"></ion-icon> </ion-button
+      >
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-card-content>
+  <ion-button slot="start" offset="6" size="small" color="tertiary"
+    ><ion-icon name="lock-closed-outline"></ion-icon> <b>Close Cart</b>
+  </ion-button>
+</ion-card-content>
+<ion-card-content>
+  <ion-button
+    routerLink="../"
+    slot="start"
+    offset="6"
+    size="small"
+    color="tertiary"
+    ><ion-icon name="arrow-back-outline"></ion-icon> Back
+  </ion-button>
+  <ion-button
+    routerLink="./itemSummary"
+    slot="start"
+    offset="6"
+    size="small"
+    color="tertiary"
+  >
+    Next <ion-icon name="arrow-forward-outline"></ion-icon
+  ></ion-button>
+</ion-card-content>
